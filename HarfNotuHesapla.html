@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harf Notu Hesapla</title>
+</head>
+<body>
+<input type="number" placeholder="Vize notunuzu giriniz" id="vize">
+<input type="number" placeholder="Final notunuzu giriniz" id="final">
+<button id="Hesapla">NOTU ÇEVİR</button>
+<script type="text/javascript">
+    var ButonHesapla=document.getElementById("Hesapla");
+    Hesapla.onclick=function(){
+        var ortalama;
+        var num1=Number(document.getElementById("vize").value);
+        var num2=Number(document.getElementById("final").value);
+        ortalama=(num1*0.4) + (num2*0.6);
+        if(ortalama>=90 && ortalama<=100){
+            alert("Harf Notunuz:AA Ortalamanız:"+ortalama);
+        }else if(ortalama>=80 && ortalama<=89){
+            alert("Harf Notunuz:BA Ortalamanız:"+ortalama);
+        }else if(ortalama>=70 && ortalama<=79){
+            alert("Harf Notunuz:BB Ortalamanız:"+ortalama);
+        }else if(ortalama>=65 && ortalama<=69){
+            alert("Harf Notunuz:CB Ortalamanız:"+ortalama);
+        }else if(ortalama>=60 && ortalama<=64){
+            alert("Harf Notunuz:CC Ortalamanız:"+ortalama);  
+        }else if(ortalama>=55 && ortalama<=59){
+            alert("Harf Notunuz:DC Ortalamanız:"+ortalama);
+        }else if(ortalama>=50 && ortalama<=54){
+            alert("Harf Notunuz:DD Ortalamanız:"+ortalama);
+        }else{
+            alert("Harf Notunuz:FF Ortalamanız:"+ortalama);
+        }
+        
+    }
+</script>
+</body>
+</html>
